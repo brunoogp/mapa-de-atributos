@@ -10,7 +10,7 @@ SPREADSHEET_ID = "1--YM0Av6A2cHa5NU8JfYbFn1I0VHov5mRbQhIzKEsvE"  # substitua se 
 SHEET_NAME = "Página1"  # nome da aba
 
 # Carrega o JSON de credenciais da variável de ambiente
-SERVICE_ACCOUNT_INFO = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
+SERVICE_ACCOUNT_INFO = json.loads(os.environ["GOOGLE_CREDENTIALS"])
 
 def adicionar_linha(dados: list):
     print("DEBUG - Dados recebidos:", dados)
