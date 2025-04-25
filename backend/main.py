@@ -7,7 +7,10 @@ app.include_router(router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://mapa-de-atributos.vercel.app",  # ✅ frontend hospedado
+        "http://localhost:3000",  # ✅ útil para testes locais
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
