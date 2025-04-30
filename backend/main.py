@@ -19,7 +19,7 @@ app.add_middleware(
         "https://mapa-de-atributos-production.up.railway.app",
         # Add localhost for development
         "http://localhost:3000",
-        "*"  # Consider removing this in production and being more specific
+        
     ],
     allow_credentials=True,
     allow_methods=["*"],
